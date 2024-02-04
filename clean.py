@@ -32,3 +32,6 @@ if __name__ == "__main__":
     # Call the clean_data function
     cleaned = clean(args.input1, args.input2)
     cleaned.to_csv(args.output, index=False)
+
+    # Print the shape of the output file
+    print("Output shape:", cleaned.shape)
